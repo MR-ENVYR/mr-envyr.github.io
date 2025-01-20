@@ -1,0 +1,60 @@
+{
+  "basics": {
+    "name": "Your Name",
+    "title": "Machine Learning Researcher | PhD Candidate",
+    "bio": "Focusing on Generative AI and Machine Learning. Currently researching advanced neural architectures.",
+    "about": "I am a researcher in Machine Learning and Artificial Intelligence, particularly interested in developing novel approaches to generative models and their applications.",
+    "email": "your.email@institution.edu",
+    "github": "yourusername",
+    "linkedin": "yourprofile",
+    "profileImage": "images/profile.jpg"
+  },
+  "research": [
+    {
+      "title": "Novel Approaches to Large Language Models",
+      "description": "Developed innovative architecture for improving efficiency in large language models, resulting in 30% reduction in computational requirements while maintaining performance.",
+      "publication": "NeurIPS 2024",
+      "date": "2024",
+      "link": "https://doi.org/..."
+    },
+    {
+      "title": "Efficient Training Methods for GANs",
+      "description": "Proposed new training methodology for Generative Adversarial Networks that improves stability and reduces mode collapse.",
+      "publication": "ICML 2023",
+      "date": "2023",
+      "link": "https://doi.org/..."
+    }
+  ],
+  "experience": [
+    {
+      "title": "Research Intern",
+      "company": "Tech AI Lab",
+      "duration": "June 2023 - September 2023",
+      "description": "Worked on developing and implementing novel neural network architectures for computer vision tasks."
+    },
+    {
+      "title": "Research Assistant",
+      "company": "University AI Lab",
+      "duration": "January 2023 - Present",
+      "description": "Leading research projects in natural language processing and conducting experiments with large language models."
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "llm-efficiency",
+      "title": "Improving LLM Training Efficiency",
+      "date": "2024-01-15",
+      "summary": "Exploring new methods for training large language models more efficiently.",
+      "content": "Full blog post content here...",
+      "tags": ["machine learning", "LLM", "efficiency"]
+    },
+    {
+      "id": "gan-stability",
+      "title": "Stable GAN Training",
+      "date": "2024-01-01",
+      "summary": "A deep dive into techniques for improving GAN training stability.",
+      "content": "Full blog post content here...",
+      "tags": ["GAN", "deep learning", "training"]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+---
+title: "Blog"
+page-layout: article
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+import json
+from datetime import datetime
+
+# Load blog data
+with open('data/content.json') as f:
+    data = json.load(f)
+
+for post in data['blogPosts']:
+    date = datetime.strptime(post['date'], '%Y-%m-%d').strftime('%B %d, %Y')
+    tags = ', '.join(post['tags'])
+    
+    print(f"""
+## {post['title']}
+
+*Posted on: {date}*
+
+{post['summary']}
+
+**Tags:** {tags}
+
+[Read More](/blog/posts/{post['id']}.qmd)
+
+---
+""")
+```

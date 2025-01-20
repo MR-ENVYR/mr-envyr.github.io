@@ -1,0 +1,25 @@
+---
+title: "Contact"
+page-layout: article
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+import json
+
+# Load contact data
+with open('data/content.json') as f:
+    data = json.load(f)
+
+basics = data['basics']
+
+print(f"""
+## Get in Touch
+
+- Email: [{basics['email']}](mailto:{basics['email']})
+- GitHub: [github.com/{basics['github']}](https://github.com/{basics['github']})
+- LinkedIn: [linkedin.com/in/{basics['linkedin']}](https://linkedin.com/in/{basics['linkedin']})
+""")
+```

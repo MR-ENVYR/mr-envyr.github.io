@@ -1,0 +1,28 @@
+---
+title: "Research"
+page-layout: article
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+import json
+
+# Load research data
+with open('data/content.json') as f:
+    data = json.load(f)
+
+for project in data['research']:
+    print(f"""
+## {project['title']}
+
+{project['description']}
+
+**Published in:** {project['publication']} ({project['date']})
+
+[View Publication]({project['link']})
+
+---
+""")
+```

@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Your Name - Academic Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: experience.qmd
+        text: Experience
+      - href: blog.qmd
+        text: Blog
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    center: |
+      © 2024 Your Name. All rights reserved.
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-fold: false
+    highlight-style: github

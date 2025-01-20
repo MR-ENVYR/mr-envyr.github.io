@@ -1,0 +1,38 @@
+---
+title: "Your Name"
+subtitle: "Machine Learning Researcher | PhD Candidate"
+page-layout: full
+toc: false
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+import json
+import pandas as pd
+from IPython.display import HTML, display
+
+# Load data from JSON (you can switch to Excel by changing this part)
+with open('data/content.json') as f:
+    data = json.load(f)
+
+# Display profile section
+print(f"""
+<div class="profile-section">
+    <img src="{data['basics']['profileImage']}" alt="Profile Photo" class="profile-img">
+    <div class="profile-content">
+        <h1>{data['basics']['name']}</h1>
+        <p class="lead">{data['basics']['title']}</p>
+        <p>{data['basics']['bio']}</p>
+    </div>
+</div>
+""")
+
+# Display about section
+print(f"""
+## About Me
+
+{data['basics']['about']}
+""")
+```
