@@ -1,0 +1,233 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Developed innovative architecture for improving efficiency in large language models, resulting in 30% reduction in computational requirements while maintaining performance.\nPublished in: NeurIPS 2024 (2024)\nView Publication"
+  },
+  {
+    "objectID": "research.html#novel-approaches-to-large-language-models",
+    "href": "research.html#novel-approaches-to-large-language-models",
+    "title": "Research",
+    "section": "",
+    "text": "Developed innovative architecture for improving efficiency in large language models, resulting in 30% reduction in computational requirements while maintaining performance.\nPublished in: NeurIPS 2024 (2024)\nView Publication"
+  },
+  {
+    "objectID": "research.html#efficient-training-methods-for-gans",
+    "href": "research.html#efficient-training-methods-for-gans",
+    "title": "Research",
+    "section": "Efficient Training Methods for GANs",
+    "text": "Efficient Training Methods for GANs\nProposed new training methodology for Generative Adversarial Networks that improves stability and reduces mode collapse.\nPublished in: ICML 2023 (2023)\nView Publication"
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Experience",
+    "section": "",
+    "text": "June 2023 - September 2023\nWorked on developing and implementing novel neural network architectures for computer vision tasks."
+  },
+  {
+    "objectID": "experience.html#research-intern---tech-ai-lab",
+    "href": "experience.html#research-intern---tech-ai-lab",
+    "title": "Experience",
+    "section": "",
+    "text": "June 2023 - September 2023\nWorked on developing and implementing novel neural network architectures for computer vision tasks."
+  },
+  {
+    "objectID": "experience.html#research-assistant---university-ai-lab",
+    "href": "experience.html#research-assistant---university-ai-lab",
+    "title": "Experience",
+    "section": "Research Assistant - University AI Lab",
+    "text": "Research Assistant - University AI Lab\nJanuary 2023 - Present\nLeading research projects in natural language processing and conducting experiments with large language models."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Posted on: January 15, 2024\nExploring new methods for training large language models more efficiently.\nTags: machine learning, LLM, efficiency\nRead More"
+  },
+  {
+    "objectID": "blog.html#improving-llm-training-efficiency",
+    "href": "blog.html#improving-llm-training-efficiency",
+    "title": "Blog",
+    "section": "",
+    "text": "Posted on: January 15, 2024\nExploring new methods for training large language models more efficiently.\nTags: machine learning, LLM, efficiency\nRead More"
+  },
+  {
+    "objectID": "blog.html#stable-gan-training",
+    "href": "blog.html#stable-gan-training",
+    "title": "Blog",
+    "section": "Stable GAN Training",
+    "text": "Stable GAN Training\nPosted on: January 01, 2024\nA deep dive into techniques for improving GAN training stability.\nTags: GAN, deep learning, training\nRead More"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html",
+    "href": "blog/posts/gan-stability.html",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "",
+    "text": "Training Generative Adversarial Networks (GANs) can be notoriously unstable. In this post, we’ll explore techniques to improve GAN training stability, backed by recent research and practical examples."
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#introduction",
+    "href": "blog/posts/gan-stability.html#introduction",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "",
+    "text": "Training Generative Adversarial Networks (GANs) can be notoriously unstable. In this post, we’ll explore techniques to improve GAN training stability, backed by recent research and practical examples."
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#the-challenge-of-mode-collapse",
+    "href": "blog/posts/gan-stability.html#the-challenge-of-mode-collapse",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "The Challenge of Mode Collapse",
+    "text": "The Challenge of Mode Collapse\nOne of the major challenges in GAN training is mode collapse, represented by the following objective function:\n\\[\n\\min_G \\max_D V(D,G) = \\mathbb{E}_{x\\sim p_{data}(x)}[\\log D(x)] + \\mathbb{E}_{z\\sim p_z(z)}[\\log(1-D(G(z)))]\n\\]\nWhere: - \\(G\\) is the generator - \\(D\\) is the discriminator - \\(p_{data}\\) is the real data distribution - \\(p_z\\) is the noise distribution"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#implementing-stable-training",
+    "href": "blog/posts/gan-stability.html#implementing-stable-training",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Implementing Stable Training",
+    "text": "Implementing Stable Training\nHere’s a PyTorch implementation of a stable GAN training loop:\nimport torch\nimport torch.nn as nn\n\nclass StableGAN(nn.Module):\n    def __init__(self, latent_dim):\n        super().__init__()\n        self.latent_dim = latent_dim\n        \n        # Generator architecture with gradient clipping\n        self.generator = nn.Sequential(\n            nn.Linear(latent_dim, 256),\n            nn.LeakyReLU(0.2),\n            nn.Linear(256, 512),\n            nn.BatchNorm1d(512),\n            nn.LeakyReLU(0.2),\n            nn.Linear(512, 784),\n            nn.Tanh()\n        )\n        \n    def forward(self, z):\n        return self.generator(z)\n\n# Training loop with gradient penalty\ndef train_step(real_data, generator, discriminator, g_optimizer, d_optimizer):\n    batch_size = real_data.size(0)\n    z = torch.randn(batch_size, latent_dim)\n    \n    # Gradient penalty implementation\n    alpha = torch.rand(batch_size, 1)\n    interpolates = alpha * real_data + (1 - alpha) * generator(z)\n    interpolates.requires_grad_(True)\n    \n    # Calculate gradient penalty\n    gradients = torch.autograd.grad(\n        outputs=discriminator(interpolates),\n        inputs=interpolates,\n        grad_outputs=torch.ones_like(discriminator(interpolates)),\n        create_graph=True\n    )[0]\n    \n    gradient_penalty = ((gradients.norm(2, dim=1) - 1) ** 2).mean()\n    \n    return generator_loss, discriminator_loss, gradient_penalty"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#visualizing-the-results",
+    "href": "blog/posts/gan-stability.html#visualizing-the-results",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Visualizing the Results",
+    "text": "Visualizing the Results\nLet’s look at some training progress:\n\n\n\nGAN Training Progress"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#interactive-results-visualization",
+    "href": "blog/posts/gan-stability.html#interactive-results-visualization",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Interactive Results Visualization",
+    "text": "Interactive Results Visualization\nHere’s an interactive plot showing the training metrics:"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#video-tutorial",
+    "href": "blog/posts/gan-stability.html#video-tutorial",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\nHere’s a detailed explanation of the implementation:"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#key-insights",
+    "href": "blog/posts/gan-stability.html#key-insights",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nGradient penalty is crucial\nBatch normalization helps\nLearning rate scheduling improves convergence"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#references",
+    "href": "blog/posts/gan-stability.html#references",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html",
+    "href": "blog/posts/llm-efficiency.html",
+    "title": "Improving LLM Training Efficiency",
+    "section": "",
+    "text": "Training Large Language Models (LLMs) efficiently is crucial for both research and production environments. This post explores various techniques to improve training efficiency while maintaining model performance."
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#introduction",
+    "href": "blog/posts/llm-efficiency.html#introduction",
+    "title": "Improving LLM Training Efficiency",
+    "section": "",
+    "text": "Training Large Language Models (LLMs) efficiently is crucial for both research and production environments. This post explores various techniques to improve training efficiency while maintaining model performance."
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#memory-optimization-techniques",
+    "href": "blog/posts/llm-efficiency.html#memory-optimization-techniques",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Memory Optimization Techniques",
+    "text": "Memory Optimization Techniques\n\nGradient Checkpointing\nThe memory usage of transformer models can be represented as:\n\\[\nM_{total} = N_l \\times (4hw + 16h^2) + 2hwN_l\n\\]\nwhere: - \\(N_l\\) is the number of layers - \\(h\\) is the hidden size - \\(w\\) is the sequence length\nHere’s an implementation of gradient checkpointing:\nfrom torch.utils.checkpoint import checkpoint\n\nclass EfficientTransformer(nn.Module):\n    def __init__(self, config):\n        super().__init__()\n        self.layers = nn.ModuleList([\n            TransformerLayer(config) for _ in range(config.num_layers)\n        ])\n    \n    def forward(self, x):\n        for layer in self.layers:\n            x = checkpoint(layer, x)  # Gradient checkpointing\n        return x"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#experimental-results",
+    "href": "blog/posts/llm-efficiency.html#experimental-results",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Experimental Results",
+    "text": "Experimental Results\nLet’s visualize the memory usage comparison:\n\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nmodels = ['Base', 'With Checkpointing', 'With 8-bit', 'Combined']\nmemory = [100, 65, 45, 30]\n\nplt.figure(figsize=(10, 6))\nplt.bar(models, memory)\nplt.ylabel('Memory Usage (GB)')\nplt.title('Memory Optimization Comparison')\nplt.xticks(rotation=45)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Memory usage comparison with and without optimizations"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#training-throughput",
+    "href": "blog/posts/llm-efficiency.html#training-throughput",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Training Throughput",
+    "text": "Training Throughput\nHere’s a comparison of different optimization techniques:\n\n\n\nMethod\nThroughput (samples/sec)\nMemory (GB)\nTraining Time\n\n\n\n\nBaseline\n100\n80\n24h\n\n\nGradient Checkpointing\n85\n45\n28h\n\n\n8-bit Training\n95\n40\n25h\n\n\nCombined\n80\n30\n30h"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#code-implementation",
+    "href": "blog/posts/llm-efficiency.html#code-implementation",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Code Implementation",
+    "text": "Code Implementation\nHere’s a complete example using PyTorch:\nimport torch\nimport transformers\nfrom accelerate import Accelerator\n\nclass EfficientTrainer:\n    def __init__(self, model, config):\n        self.accelerator = Accelerator(\n            gradient_accumulation_steps=config.gradient_accumulation_steps,\n            mixed_precision='fp16'\n        )\n        \n        self.model = model\n        self.optimizer = torch.optim.AdamW(\n            model.parameters(),\n            lr=config.learning_rate\n        )\n        \n    def train(self, dataloader):\n        self.model, self.optimizer, dataloader = \\\n            self.accelerator.prepare(self.model, self.optimizer, dataloader)\n            \n        for batch in dataloader:\n            with self.accelerator.accumulate(self.model):\n                outputs = self.model(**batch)\n                loss = outputs.loss\n                self.accelerator.backward(loss)\n                self.optimizer.step()\n                self.optimizer.zero_grad()"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#interactive-demo",
+    "href": "blog/posts/llm-efficiency.html#interactive-demo",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Interactive Demo",
+    "text": "Interactive Demo\nTry adjusting the parameters:\n\n\nCode\nviewof batchSize = Inputs.range([1, 128], {\n  step: 1,\n  label: \"Batch Size\"\n})\n\nviewof learningRate = Inputs.range([1e-6, 1e-3], {\n  step: 1e-6,\n  label: \"Learning Rate\"\n})\n\nPlot.plot({\n  y: calculateThroughput(batchSize, learningRate),\n  x: Array.from({length: 100}, (_, i) =&gt; i),\n  line: true\n})"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#scalability-analysis",
+    "href": "blog/posts/llm-efficiency.html#scalability-analysis",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Scalability Analysis",
+    "text": "Scalability Analysis\nThe following equation represents the relationship between model size and training efficiency:\n\\[\nE = \\alpha \\cdot \\frac{T}{M \\cdot B}\n\\]\nWhere: - \\(E\\) is efficiency - \\(T\\) is throughput - \\(M\\) is model size - \\(B\\) is batch size - \\(\\alpha\\) is a scaling factor"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#advanced-visualization",
+    "href": "blog/posts/llm-efficiency.html#advanced-visualization",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Advanced Visualization",
+    "text": "Advanced Visualization\nHere’s a 3D plot of the efficiency landscape:"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#references",
+    "href": "blog/posts/llm-efficiency.html#references",
+    "title": "Improving LLM Training Efficiency",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "blog/posts/llm-efficiency.html#further-reading",
+    "href": "blog/posts/llm-efficiency.html#further-reading",
+    "title": "Improving LLM Training Efficiency",
+    "section": "Further Reading",
+    "text": "Further Reading\nFor more details, check out: - 🔗 Efficient Training Guide - 📚 PyTorch Documentation - 📝 Our Research Paper"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: your.email@institution.edu\nGitHub: github.com/yourusername\nLinkedIn: linkedin.com/in/yourprofile"
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: your.email@institution.edu\nGitHub: github.com/yourusername\nLinkedIn: linkedin.com/in/yourprofile"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Your Name",
+    "section": "",
+    "text": "&lt;img src=\"images/profile.jpg\" alt=\"Profile Photo\" class=\"profile-img\"&gt;\n&lt;div class=\"profile-content\"&gt;\n    &lt;h1&gt;Your Name&lt;/h1&gt;\n    &lt;p class=\"lead\"&gt;Machine Learning Researcher | PhD Candidate&lt;/p&gt;\n    &lt;p&gt;Focusing on Generative AI and Machine Learning. Currently researching advanced neural architectures.&lt;/p&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Your Name",
+    "section": "About Me",
+    "text": "About Me\nI am a researcher in Machine Learning and Artificial Intelligence, particularly interested in developing novel approaches to generative models and their applications."
+  }
+]
