@@ -1,0 +1,15 @@
+
+---
+pagetitle: "Page Not Found"
+center: true
+format: 
+  html:
+    css: styles.css
+---
+::: {.error-page}
+![]({{< var assets.notfound >}})
+<p>
+Hmm... Something awesome seems to be in construction here! Visit back soon to check if it is done!
+</p>
+:::
+

@@ -1,6 +1,14 @@
 ---
-title: "Contact"
+pagetitle: "Contact"
 page-layout: article
+format:
+    html:
+        comments: 
+            utterances:
+                repo: MR-ENVYR/mr-envyr.github.io
+                label: "site-contact"
+                theme: github-light
+                issue-term: url
 ---
 
 ```{python}

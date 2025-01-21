@@ -1,26 +1,70 @@
 ---
-title: "Experience"
+pagetitle: "Experience"
 page-layout: article
+format: html
+toc: true
+toc-depth: 1
 ---
 
+
+::: {.experience-item}
+# Academic Experience
 ```{python}
 #| echo: false
 #| output: asis
 
 import json
 
-# Load experience data
+# Load research data
 with open('data/content.json') as f:
     data = json.load(f)
 
 for exp in data['experience']:
-    print(f"""
-## {exp['title']} - {exp['company']}
+    typ = exp["type"]
+    title = exp["title"]
+    desc = exp["description"]
+    company = exp["company"]
+    dates = exp["dates"]
+    if typ=="acad":
+        print(f"""
+### {title} - {company}
 
-*{exp['duration']}*
+*{dates}*
 
-{exp['description']}
+{desc}
 
 ---
 """)
 ```
+:::
+
+::: {.experience-item}
+# Work Experience
+```{python}
+#| echo: false
+#| output: asis
+
+import json
+
+# Load research data
+with open('data/content.json') as f:
+    data = json.load(f)
+
+for exp in data['experience']:
+    typ = exp["type"]
+    title = exp["title"]
+    desc = exp["description"]
+    company = exp["company"]
+    dates = exp["dates"]
+    if typ=="work":
+        print(f"""
+### {title} - {company}
+
+*{dates}*
+
+{desc}
+
+---
+""")
+```
+:::

@@ -3,27 +3,31 @@ project:
   output-dir: _site
 
 website:
-  title: "Your Name - Academic Portfolio"
+  title: "Raghavendra N. V."
+  google-analytics: "G-3WBQC1YBVT"
+  cookie-consent: true
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - href: research.qmd
         text: Research
       - href: experience.qmd
         text: Experience
-      - href: blog.qmd
+      - href: 404.qmd
         text: Blog
       - href: contact.qmd
         text: Contact
   page-footer:
     center: |
-      © 2024 Your Name. All rights reserved.
+      © 2024 Venkata Raghavendra. All rights reserved. | Designed with [Quarto](https://quarto.org/)
 
 format:
   html:
-    theme: cosmo
+    theme: journal
+      # light: journal
+      # dark: journal
     css: styles.css
-    toc: true
+    toc: false
     code-fold: false
     highlight-style: github

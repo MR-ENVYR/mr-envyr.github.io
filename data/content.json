@@ -1,60 +1,81 @@
 {
   "basics": {
-    "name": "Your Name",
-    "title": "Machine Learning Researcher | PhD Candidate",
-    "bio": "Focusing on Generative AI and Machine Learning. Currently researching advanced neural architectures.",
-    "about": "I am a researcher in Machine Learning and Artificial Intelligence, particularly interested in developing novel approaches to generative models and their applications.",
-    "email": "your.email@institution.edu",
-    "github": "yourusername",
-    "linkedin": "yourprofile",
+    "name": "Venkata Raghavendra Nouduru",
+    "title": "Graduate Research Student | Machine Learning and Generative AI",
+    "bio": "Focusing on Reality-Centric AI. Currently searching advanced ensembles to mimic our thought process.",
+    "about": "Welcome to my webiste! ",
+    "email": "nouduru.venkata@research.iiit.ac.in",
+    "github": "mr-envyr",
+    "linkedin": "nvraghavendra",
     "profileImage": "images/profile.jpg"
   },
   "research": [
     {
-      "title": "Novel Approaches to Large Language Models",
-      "description": "Developed innovative architecture for improving efficiency in large language models, resulting in 30% reduction in computational requirements while maintaining performance.",
-      "publication": "NeurIPS 2024",
-      "date": "2024",
-      "link": "https://doi.org/..."
+      "title": "Balancing data in healthcare: A review of ensemble diversity",
+      "description": "Data imbalance has continuously evolved to plague the field of applied machine learning. Critical applications such as healthcare often deal with highly imbalanced datasets where the minority class is usually of significant importance. Generic ML models fail to perform well on the minority class. With the introduction of SMOTE and subsequent variants, oversampling algorithms became one of the most widely adopted solutions for imbalanced datasets. This work reviews a subset of SMOTE variants and the performance improvements they provide on commonly used imbalanced datasets. These reviews are evaluated from the perspective of ensemble diversity using kappa error diagrams, the importance of which is explained. A new and intuitive metric is also proposed over kappa-error diagrams to evaluate the diversity of an ensemble.",
+      "publisher": "Expert Systems With Applications",
+      "type": "Journal (In review)",
+      "year": "2024",
+      "link": "",
+      "vid": "",
+      "showcase": ""
     },
     {
-      "title": "Efficient Training Methods for GANs",
-      "description": "Proposed new training methodology for Generative Adversarial Networks that improves stability and reduces mode collapse.",
-      "publication": "ICML 2023",
-      "date": "2023",
-      "link": "https://doi.org/..."
+      "title": "MetaCirc: A Meta-Learning Approach for Statistical Leakage Estimation Improvement in Digital Circuits",
+      "description": "Aggressive scaling down of transistor dimensions has made process-aware circuit modeling a crucial task. Achieving accurate circuit modeling requires lengthy and resource-intensive simulations. Machine Learning-based surrogate models, offering computational efficiency and speed, are viable alternatives to traditional simulators. This work introduces a meta-learning approach designed to accurately capture process-induced variations in the leakage power of VLSI circuits. We use a meta-learning architecture that leverages a learnable neural network to choose between pre-trained regressors through a soft-choice process for a particular data point.",
+      "publisher": "IEEE ISCAS",
+      "type": "Conference",
+      "year": "2024",
+      "link": "https://ieeexplore.ieee.org/abstract/document/10558185",
+      "vid": "https://youtu.be/Qnr6r3iCyI0",
+      "showcase": "https://rndshowcase.iiit.ac.in/tto2024/main1.php?centername=Center%20for%20VLSI%20and%20Embedded%20Systems%20Technology&shortform=CVEST&title_tech=MetaCirc:%20A%20meta-learning%20Approach%20for%20Statistical%20Leakage%20Estimation%20Improvement%20in%20Digital%20Circuits"
+    },
+    {
+      "title": "RiQualis: A portable and accessible smartphone based Rice Quality Analysis tool",
+      "description": "Rice (Oryza Sativa) is a staple food for millions of people across the globe and is known to supply about 20% of calories to the population of the world each day. It is one of the most widely consumed food crops in Asia where it provides over 50% of the calorific supply. The quality analysis of such a popular and widely consumed crop is of paramount importance as many people are dependent on rice to meet their nutrition requirements. However a large quantity of the quality analysis methods used in the industry call for manual inspection that leads to inaccurate and time consuming analysis. By introducing a method to effectively utilize smartphone technology, we improve the accessibility and portability of existing methods such as so that farmers having budget smartphones can also utilize this technology for their benefits. The tool achieved an accuracy of about 96% on the test set and the algorithms were able to detect and extract the physical features of the rice grains with an accuracy of pm 0.134 mm. We use the smartphone as a sensor to capture images and then perform analysis on the image. Our proposed method allows people with limited access to technology such as farmers to perform accurate analysis of rice grains by making use of available gadgets such as smartphones. The method can also be easily extended for other edible food grains too.",
+      "publisher": "NA",
+      "type": "Journal (Draft)",
+      "year": "2022",
+      "link": "",
+      "vid": "",
+      "showcase": ""
     }
   ],
   "experience": [
     {
-      "title": "Research Intern",
-      "company": "Tech AI Lab",
-      "duration": "June 2023 - September 2023",
-      "description": "Worked on developing and implementing novel neural network architectures for computer vision tasks."
+      "title": "Machine Learning Intern",
+      "company": "xLM - Continuous Validation",
+      "dates": "April 2024 - December 2024",
+      "description": "Worked on reducing hallucinations in LLM using pre-defined user tagged context. Delivered a delayed project prototype demo within 1.5 months of joining. Implemented custom similarity search from scratch to fetch relevant context from PDFs. Deployed AWS Lambda Functions.",
+      "type": "work"
     },
     {
-      "title": "Research Assistant",
-      "company": "University AI Lab",
-      "duration": "January 2023 - Present",
-      "description": "Leading research projects in natural language processing and conducting experiments with large language models."
-    }
-  ],
-  "blogPosts": [
-    {
-      "id": "llm-efficiency",
-      "title": "Improving LLM Training Efficiency",
-      "date": "2024-01-15",
-      "summary": "Exploring new methods for training large language models more efficiently.",
-      "content": "Full blog post content here...",
-      "tags": ["machine learning", "LLM", "efficiency"]
+      "title": "Research Internship - Machine Learning",
+      "company": "IIIT Naya Raipur",
+      "dates": "May 2021 - May 2022",
+      "description": "Developed an algorithm to extract Regions of Interest and physical features using OpenCV. Trained and embedded Random Forest into a mobile app to predict rice quality using images from a smartphone.",
+      "type": "work"
     },
     {
-      "id": "gan-stability",
-      "title": "Stable GAN Training",
-      "date": "2024-01-01",
-      "summary": "A deep dive into techniques for improving GAN training stability.",
-      "content": "Full blog post content here...",
-      "tags": ["GAN", "deep learning", "training"]
+      "title": "Agents of Style: Mobile App Development",
+      "company": "InternWell",
+      "dates": "2021",
+      "description": "Contributed to UI/UX Prototyping of a Flutter-based mobile application for an international client. Effectively managed client communication and progress to fast-track development and ensure delivery as promised.",
+      "type": "work"
+    },
+    {
+      "title": "Manuscript Reviewer - ISCAS 25",
+      "company": "IEEE CASS",
+      "dates": "September 2024 - October 2024",
+      "description": "Reviewed ML-related submissions for technical accuracy, originality, and relevance to the field. Ensured high-quality research contributions and compliance for the conference proceedings. Conducted rigorous evaluations of proposed methodologies",
+      "type": "acad"
+    },
+    {
+      "title": "Teaching Assistant - Digital VLSI Design (S24)",
+      "company": "IIIT Hyderabad",
+      "dates": "January 2024 - May 2024",
+      "description": "Gave tutorials on applied machine learning and meta-learning in VLSI. Taught the basics of Machine Learning, Deep Learning and Meta - Learning to a class of 100 students. Conducted evaluations of ML projects and assignments",
+      "type": "acad"
     }
   ]
 }

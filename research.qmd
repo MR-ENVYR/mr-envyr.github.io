@@ -1,8 +1,11 @@
 ---
-title: "Research"
+pagetitle: "Research"
 page-layout: article
+format: html
 ---
 
+::: {.column-page}
+# Research Projects
 ```{python}
 #| echo: false
 #| output: asis
@@ -14,15 +17,32 @@ with open('data/content.json') as f:
     data = json.load(f)
 
 for project in data['research']:
+    title = project["title"]
+    desc = project["description"]
+    publisher = project["publisher"]
+    typ = project["type"]
+    year = project["year"]
+    link = project["link"]
+    vid = project["vid"]
+    showc = project["showcase"]
+    foot = []
+    if len(link) > 0:
+        foot += [f'[View Publication]({link})']
+    if len(vid) > 0:
+        foot += [f'[Video]({vid})']
+    if len(showc) > 0:
+        foot += [f'[Showcase]({showc})']
+    footstr = ' | '.join(foot) if len(foot) > 0 else ''
+    
     print(f"""
-## {project['title']}
+## {title}
 
-{project['description']}
+{desc}
 
-**Published in:** {project['publication']} ({project['date']})
+**Publisher:** {publisher} | {typ} | {year}
 
-[View Publication]({project['link']})
-
+{footstr}
 ---
 """)
 ```
+:::

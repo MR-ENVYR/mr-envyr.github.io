@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Blog"
 page-layout: article
 ---
@@ -31,4 +31,4 @@ for post in data['blogPosts']:
 
 ---
 """)
-```
+``` -->

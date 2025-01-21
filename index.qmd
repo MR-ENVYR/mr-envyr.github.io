@@ -1,38 +1,53 @@
+<!-- ```{ojs}
+//| echo: false
+data = FileAttachment("data/contents.json")
+// data
+``` -->
+
 ---
-title: "Your Name"
-subtitle: "Machine Learning Researcher | PhD Candidate"
-page-layout: full
+title: "Venkata Raghavendra Nouduru"
+subtitle: "Graduate Research Student | Machine Learning and Generative AI"
+image: assets/images/profile.jpeg
 toc: false
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      url: "https://linkedin.com/in/nvraghavendra"
+    - text: GitHub
+      icon: github
+      url: "https://github.com/mr-envyr"
+    - text: Email
+      icon: envelope-fill
+      url: "mailto:nvraghavendra2000+site@gmail.com"
+    - text: Blog
+      icon: journal-text
+      url: 404.qmd
+    - text: CV
+      icon: file-earmark-text-fill
+      url: "assets/PDFs/CV.pdf"
+    - text: Scholar
+      icon: google
+      url: "https://scholar.google.com/citations?user=rJvM_h4AAAAJ&hl=en"
+---
+::: {.column-page}
+
+## About me
+Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. [Zia Abbas](https://scholar.google.com/citations?user=8oYH-fUAAAAJ) and Prof. [Amir Ahmad](https://scholar.google.com/citations?user=qD63RCUAAAAJ). My research interests primarily lie in **trustworthy deep learning** practices focussed on **personalized healthcare** and **aiding scientific discoveries**. I hope to someday discover **advanced network architectures** 🕵🏻‍♀️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!
+
 ---
 
-```{python}
-#| echo: false
-#| output: asis
+## Latest Research
+- I am currently exploring advanced ensembling techniques to tackle imbalanced data in healthcare and studying the effects of ensemble diversity on its performance. (In Review)
+- In my previous project, I came up with a cascaded meta-learning architecture to significantly improve statistical leakage estimation in Digital VLSI Circuits. ([Publication](https://ieeexplore.ieee.org/abstract/document/10558185) | [Presentation](https://youtu.be/Qnr6r3iCyI0))
 
-import json
-import pandas as pd
-from IPython.display import HTML, display
+---
 
-# Load data from JSON (you can switch to Excel by changing this part)
-with open('data/content.json') as f:
-    data = json.load(f)
+## Updates!
+- I am in my **final year of my graduate studies** and am on the look out for interesting _research opportunities!_ Please reach out to me if I seem like a good fit.
+:::
 
-# Display profile section
-print(f"""
-<div class="profile-section">
-    <img src="{data['basics']['profileImage']}" alt="Profile Photo" class="profile-img">
-    <div class="profile-content">
-        <h1>{data['basics']['name']}</h1>
-        <p class="lead">{data['basics']['title']}</p>
-        <p>{data['basics']['bio']}</p>
-    </div>
-</div>
-""")
 
-# Display about section
-print(f"""
-## About Me
-
-{data['basics']['about']}
-""")
-```
