@@ -2,128 +2,72 @@
   {
     "objectID": "research.html",
     "href": "research.html",
-    "title": "Research",
+    "title": "Research Projects",
     "section": "",
-    "text": "Developed innovative architecture for improving efficiency in large language models, resulting in 30% reduction in computational requirements while maintaining performance.\nPublished in: NeurIPS 2024 (2024)\nView Publication"
+    "text": "Data imbalance has continuously evolved to plague the field of applied machine learning. Critical applications such as healthcare often deal with highly imbalanced datasets where the minority class is usually of significant importance. Generic ML models fail to perform well on the minority class. With the introduction of SMOTE and subsequent variants, oversampling algorithms became one of the most widely adopted solutions for imbalanced datasets. This work reviews a subset of SMOTE variants and the performance improvements they provide on commonly used imbalanced datasets. These reviews are evaluated from the perspective of ensemble diversity using kappa error diagrams, the importance of which is explained. A new and intuitive metric is also proposed over kappa-error diagrams to evaluate the diversity of an ensemble.\nPublisher: Expert Systems With Applications | Journal (In review) | 2024\n\n\n\n\nAggressive scaling down of transistor dimensions has made process-aware circuit modeling a crucial task. Achieving accurate circuit modeling requires lengthy and resource-intensive simulations. Machine Learning-based surrogate models, offering computational efficiency and speed, are viable alternatives to traditional simulators. This work introduces a meta-learning approach designed to accurately capture process-induced variations in the leakage power of VLSI circuits. We use a meta-learning architecture that leverages a learnable neural network to choose between pre-trained regressors through a soft-choice process for a particular data point.\nPublisher: IEEE ISCAS | Conference | 2024\nView Publication | Video | Showcase\n\n\n\n\nRice (Oryza Sativa) is a staple food for millions of people across the globe and is known to supply about 20% of calories to the population of the world each day. It is one of the most widely consumed food crops in Asia where it provides over 50% of the calorific supply. The quality analysis of such a popular and widely consumed crop is of paramount importance as many people are dependent on rice to meet their nutrition requirements. However a large quantity of the quality analysis methods used in the industry call for manual inspection that leads to inaccurate and time consuming analysis. By introducing a method to effectively utilize smartphone technology, we improve the accessibility and portability of existing methods such as so that farmers having budget smartphones can also utilize this technology for their benefits. The tool achieved an accuracy of about 96% on the test set and the algorithms were able to detect and extract the physical features of the rice grains with an accuracy of pm 0.134 mm. We use the smartphone as a sensor to capture images and then perform analysis on the image. Our proposed method allows people with limited access to technology such as farmers to perform accurate analysis of rice grains by making use of available gadgets such as smartphones. The method can also be easily extended for other edible food grains too.\nPublisher: NA | Journal (Draft) | 2022"
   },
   {
-    "objectID": "research.html#novel-approaches-to-large-language-models",
-    "href": "research.html#novel-approaches-to-large-language-models",
-    "title": "Research",
+    "objectID": "research.html#balancing-data-in-healthcare-a-review-of-ensemble-diversity",
+    "href": "research.html#balancing-data-in-healthcare-a-review-of-ensemble-diversity",
+    "title": "Research Projects",
     "section": "",
-    "text": "Developed innovative architecture for improving efficiency in large language models, resulting in 30% reduction in computational requirements while maintaining performance.\nPublished in: NeurIPS 2024 (2024)\nView Publication"
+    "text": "Data imbalance has continuously evolved to plague the field of applied machine learning. Critical applications such as healthcare often deal with highly imbalanced datasets where the minority class is usually of significant importance. Generic ML models fail to perform well on the minority class. With the introduction of SMOTE and subsequent variants, oversampling algorithms became one of the most widely adopted solutions for imbalanced datasets. This work reviews a subset of SMOTE variants and the performance improvements they provide on commonly used imbalanced datasets. These reviews are evaluated from the perspective of ensemble diversity using kappa error diagrams, the importance of which is explained. A new and intuitive metric is also proposed over kappa-error diagrams to evaluate the diversity of an ensemble.\nPublisher: Expert Systems With Applications | Journal (In review) | 2024"
   },
   {
-    "objectID": "research.html#efficient-training-methods-for-gans",
-    "href": "research.html#efficient-training-methods-for-gans",
-    "title": "Research",
-    "section": "Efficient Training Methods for GANs",
-    "text": "Efficient Training Methods for GANs\nProposed new training methodology for Generative Adversarial Networks that improves stability and reduces mode collapse.\nPublished in: ICML 2023 (2023)\nView Publication"
-  },
-  {
-    "objectID": "experience.html",
-    "href": "experience.html",
-    "title": "Experience",
+    "objectID": "research.html#metacirc-a-meta-learning-approach-for-statistical-leakage-estimation-improvement-in-digital-circuits",
+    "href": "research.html#metacirc-a-meta-learning-approach-for-statistical-leakage-estimation-improvement-in-digital-circuits",
+    "title": "Research Projects",
     "section": "",
-    "text": "June 2023 - September 2023\nWorked on developing and implementing novel neural network architectures for computer vision tasks."
+    "text": "Aggressive scaling down of transistor dimensions has made process-aware circuit modeling a crucial task. Achieving accurate circuit modeling requires lengthy and resource-intensive simulations. Machine Learning-based surrogate models, offering computational efficiency and speed, are viable alternatives to traditional simulators. This work introduces a meta-learning approach designed to accurately capture process-induced variations in the leakage power of VLSI circuits. We use a meta-learning architecture that leverages a learnable neural network to choose between pre-trained regressors through a soft-choice process for a particular data point.\nPublisher: IEEE ISCAS | Conference | 2024\nView Publication | Video | Showcase"
   },
   {
-    "objectID": "experience.html#research-intern---tech-ai-lab",
-    "href": "experience.html#research-intern---tech-ai-lab",
-    "title": "Experience",
+    "objectID": "research.html#riqualis-a-portable-and-accessible-smartphone-based-rice-quality-analysis-tool",
+    "href": "research.html#riqualis-a-portable-and-accessible-smartphone-based-rice-quality-analysis-tool",
+    "title": "Research Projects",
     "section": "",
-    "text": "June 2023 - September 2023\nWorked on developing and implementing novel neural network architectures for computer vision tasks."
+    "text": "Rice (Oryza Sativa) is a staple food for millions of people across the globe and is known to supply about 20% of calories to the population of the world each day. It is one of the most widely consumed food crops in Asia where it provides over 50% of the calorific supply. The quality analysis of such a popular and widely consumed crop is of paramount importance as many people are dependent on rice to meet their nutrition requirements. However a large quantity of the quality analysis methods used in the industry call for manual inspection that leads to inaccurate and time consuming analysis. By introducing a method to effectively utilize smartphone technology, we improve the accessibility and portability of existing methods such as so that farmers having budget smartphones can also utilize this technology for their benefits. The tool achieved an accuracy of about 96% on the test set and the algorithms were able to detect and extract the physical features of the rice grains with an accuracy of pm 0.134 mm. We use the smartphone as a sensor to capture images and then perform analysis on the image. Our proposed method allows people with limited access to technology such as farmers to perform accurate analysis of rice grains by making use of available gadgets such as smartphones. The method can also be easily extended for other edible food grains too.\nPublisher: NA | Journal (Draft) | 2022"
   },
   {
-    "objectID": "experience.html#research-assistant---university-ai-lab",
-    "href": "experience.html#research-assistant---university-ai-lab",
-    "title": "Experience",
-    "section": "Research Assistant - University AI Lab",
-    "text": "Research Assistant - University AI Lab\nJanuary 2023 - Present\nLeading research projects in natural language processing and conducting experiments with large language models."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Venkata Raghavendra Nouduru",
     "section": "",
-    "text": "Posted on: January 15, 2024\nExploring new methods for training large language models more efficiently.\nTags: machine learning, LLM, efficiency\nRead More"
+    "text": "Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. Zia Abbas and Prof. Amir Ahmad. My research interests primarily lie in trustworthy deep learning practices focussed on personalized healthcare and aiding scientific discoveries. I hope to someday discover advanced network architectures 🕵🏻‍♀️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!\n\n\n\n\n\nI am currently exploring advanced ensembling techniques to tackle imbalanced data in healthcare and studying the effects of ensemble diversity on its performance. (In Review)\nIn my previous project, I came up with a cascaded meta-learning architecture to significantly improve statistical leakage estimation in Digital VLSI Circuits. (Publication | Presentation)\n\n\n\n\n\n\nI am in my final year of my graduate studies and am on the look out for interesting research opportunities! Please reach out to me if I seem like a good fit."
   },
   {
-    "objectID": "blog.html#improving-llm-training-efficiency",
-    "href": "blog.html#improving-llm-training-efficiency",
-    "title": "Blog",
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Venkata Raghavendra Nouduru",
     "section": "",
-    "text": "Posted on: January 15, 2024\nExploring new methods for training large language models more efficiently.\nTags: machine learning, LLM, efficiency\nRead More"
+    "text": "Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. Zia Abbas and Prof. Amir Ahmad. My research interests primarily lie in trustworthy deep learning practices focussed on personalized healthcare and aiding scientific discoveries. I hope to someday discover advanced network architectures 🕵🏻‍♀️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!"
   },
   {
-    "objectID": "blog.html#stable-gan-training",
-    "href": "blog.html#stable-gan-training",
-    "title": "Blog",
-    "section": "Stable GAN Training",
-    "text": "Stable GAN Training\nPosted on: January 01, 2024\nA deep dive into techniques for improving GAN training stability.\nTags: GAN, deep learning, training\nRead More"
-  },
-  {
-    "objectID": "blog/posts/gan-stability.html",
-    "href": "blog/posts/gan-stability.html",
-    "title": "Stable GAN Training: A Comprehensive Guide",
+    "objectID": "index.html#latest-research",
+    "href": "index.html#latest-research",
+    "title": "Venkata Raghavendra Nouduru",
     "section": "",
-    "text": "Training Generative Adversarial Networks (GANs) can be notoriously unstable. In this post, we’ll explore techniques to improve GAN training stability, backed by recent research and practical examples."
+    "text": "I am currently exploring advanced ensembling techniques to tackle imbalanced data in healthcare and studying the effects of ensemble diversity on its performance. (In Review)\nIn my previous project, I came up with a cascaded meta-learning architecture to significantly improve statistical leakage estimation in Digital VLSI Circuits. (Publication | Presentation)"
   },
   {
-    "objectID": "blog/posts/gan-stability.html#introduction",
-    "href": "blog/posts/gan-stability.html#introduction",
-    "title": "Stable GAN Training: A Comprehensive Guide",
+    "objectID": "index.html#updates",
+    "href": "index.html#updates",
+    "title": "Venkata Raghavendra Nouduru",
     "section": "",
-    "text": "Training Generative Adversarial Networks (GANs) can be notoriously unstable. In this post, we’ll explore techniques to improve GAN training stability, backed by recent research and practical examples."
+    "text": "I am in my final year of my graduate studies and am on the look out for interesting research opportunities! Please reach out to me if I seem like a good fit."
   },
   {
-    "objectID": "blog/posts/gan-stability.html#the-challenge-of-mode-collapse",
-    "href": "blog/posts/gan-stability.html#the-challenge-of-mode-collapse",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "The Challenge of Mode Collapse",
-    "text": "The Challenge of Mode Collapse\nOne of the major challenges in GAN training is mode collapse, represented by the following objective function:\n\\[\n\\min_G \\max_D V(D,G) = \\mathbb{E}_{x\\sim p_{data}(x)}[\\log D(x)] + \\mathbb{E}_{z\\sim p_z(z)}[\\log(1-D(G(z)))]\n\\]\nWhere: - \\(G\\) is the generator - \\(D\\) is the discriminator - \\(p_{data}\\) is the real data distribution - \\(p_z\\) is the noise distribution"
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Raghavendra N. V.",
+    "section": "",
+    "text": "Email: nouduru.venkata@research.iiit.ac.in\nGitHub: github.com/mr-envyr\nLinkedIn: linkedin.com/in/nvraghavendra"
   },
   {
-    "objectID": "blog/posts/gan-stability.html#implementing-stable-training",
-    "href": "blog/posts/gan-stability.html#implementing-stable-training",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "Implementing Stable Training",
-    "text": "Implementing Stable Training\nHere’s a PyTorch implementation of a stable GAN training loop:\nimport torch\nimport torch.nn as nn\n\nclass StableGAN(nn.Module):\n    def __init__(self, latent_dim):\n        super().__init__()\n        self.latent_dim = latent_dim\n        \n        # Generator architecture with gradient clipping\n        self.generator = nn.Sequential(\n            nn.Linear(latent_dim, 256),\n            nn.LeakyReLU(0.2),\n            nn.Linear(256, 512),\n            nn.BatchNorm1d(512),\n            nn.LeakyReLU(0.2),\n            nn.Linear(512, 784),\n            nn.Tanh()\n        )\n        \n    def forward(self, z):\n        return self.generator(z)\n\n# Training loop with gradient penalty\ndef train_step(real_data, generator, discriminator, g_optimizer, d_optimizer):\n    batch_size = real_data.size(0)\n    z = torch.randn(batch_size, latent_dim)\n    \n    # Gradient penalty implementation\n    alpha = torch.rand(batch_size, 1)\n    interpolates = alpha * real_data + (1 - alpha) * generator(z)\n    interpolates.requires_grad_(True)\n    \n    # Calculate gradient penalty\n    gradients = torch.autograd.grad(\n        outputs=discriminator(interpolates),\n        inputs=interpolates,\n        grad_outputs=torch.ones_like(discriminator(interpolates)),\n        create_graph=True\n    )[0]\n    \n    gradient_penalty = ((gradients.norm(2, dim=1) - 1) ** 2).mean()\n    \n    return generator_loss, discriminator_loss, gradient_penalty"
-  },
-  {
-    "objectID": "blog/posts/gan-stability.html#visualizing-the-results",
-    "href": "blog/posts/gan-stability.html#visualizing-the-results",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "Visualizing the Results",
-    "text": "Visualizing the Results\nLet’s look at some training progress:\n\n\n\nGAN Training Progress"
-  },
-  {
-    "objectID": "blog/posts/gan-stability.html#interactive-results-visualization",
-    "href": "blog/posts/gan-stability.html#interactive-results-visualization",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "Interactive Results Visualization",
-    "text": "Interactive Results Visualization\nHere’s an interactive plot showing the training metrics:"
-  },
-  {
-    "objectID": "blog/posts/gan-stability.html#video-tutorial",
-    "href": "blog/posts/gan-stability.html#video-tutorial",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "Video Tutorial",
-    "text": "Video Tutorial\nHere’s a detailed explanation of the implementation:"
-  },
-  {
-    "objectID": "blog/posts/gan-stability.html#key-insights",
-    "href": "blog/posts/gan-stability.html#key-insights",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "Key Insights",
-    "text": "Key Insights\n\nGradient penalty is crucial\nBatch normalization helps\nLearning rate scheduling improves convergence"
-  },
-  {
-    "objectID": "blog/posts/gan-stability.html#references",
-    "href": "blog/posts/gan-stability.html#references",
-    "title": "Stable GAN Training: A Comprehensive Guide",
-    "section": "References",
-    "text": "References"
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Raghavendra N. V.",
+    "section": "",
+    "text": "Email: nouduru.venkata@research.iiit.ac.in\nGitHub: github.com/mr-envyr\nLinkedIn: linkedin.com/in/nvraghavendra"
   },
   {
     "objectID": "blog/posts/llm-efficiency.html",
@@ -203,31 +147,87 @@
     "text": "Further Reading\nFor more details, check out: - 🔗 Efficient Training Guide - 📚 PyTorch Documentation - 📝 Our Research Paper"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "blog/posts/gan-stability.html",
+    "href": "blog/posts/gan-stability.html",
+    "title": "Stable GAN Training: A Comprehensive Guide",
     "section": "",
-    "text": "Email: your.email@institution.edu\nGitHub: github.com/yourusername\nLinkedIn: linkedin.com/in/yourprofile"
+    "text": "Training Generative Adversarial Networks (GANs) can be notoriously unstable. In this post, we’ll explore techniques to improve GAN training stability, backed by recent research and practical examples."
   },
   {
-    "objectID": "contact.html#get-in-touch",
-    "href": "contact.html#get-in-touch",
-    "title": "Contact",
+    "objectID": "blog/posts/gan-stability.html#introduction",
+    "href": "blog/posts/gan-stability.html#introduction",
+    "title": "Stable GAN Training: A Comprehensive Guide",
     "section": "",
-    "text": "Email: your.email@institution.edu\nGitHub: github.com/yourusername\nLinkedIn: linkedin.com/in/yourprofile"
+    "text": "Training Generative Adversarial Networks (GANs) can be notoriously unstable. In this post, we’ll explore techniques to improve GAN training stability, backed by recent research and practical examples."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Your Name",
-    "section": "",
-    "text": "&lt;img src=\"images/profile.jpg\" alt=\"Profile Photo\" class=\"profile-img\"&gt;\n&lt;div class=\"profile-content\"&gt;\n    &lt;h1&gt;Your Name&lt;/h1&gt;\n    &lt;p class=\"lead\"&gt;Machine Learning Researcher | PhD Candidate&lt;/p&gt;\n    &lt;p&gt;Focusing on Generative AI and Machine Learning. Currently researching advanced neural architectures.&lt;/p&gt;\n&lt;/div&gt;"
+    "objectID": "blog/posts/gan-stability.html#the-challenge-of-mode-collapse",
+    "href": "blog/posts/gan-stability.html#the-challenge-of-mode-collapse",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "The Challenge of Mode Collapse",
+    "text": "The Challenge of Mode Collapse\nOne of the major challenges in GAN training is mode collapse, represented by the following objective function:\n\\[\n\\min_G \\max_D V(D,G) = \\mathbb{E}_{x\\sim p_{data}(x)}[\\log D(x)] + \\mathbb{E}_{z\\sim p_z(z)}[\\log(1-D(G(z)))]\n\\]\nWhere: - \\(G\\) is the generator - \\(D\\) is the discriminator - \\(p_{data}\\) is the real data distribution - \\(p_z\\) is the noise distribution"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Your Name",
+    "objectID": "blog/posts/gan-stability.html#implementing-stable-training",
+    "href": "blog/posts/gan-stability.html#implementing-stable-training",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Implementing Stable Training",
+    "text": "Implementing Stable Training\nHere’s a PyTorch implementation of a stable GAN training loop:\nimport torch\nimport torch.nn as nn\n\nclass StableGAN(nn.Module):\n    def __init__(self, latent_dim):\n        super().__init__()\n        self.latent_dim = latent_dim\n        \n        # Generator architecture with gradient clipping\n        self.generator = nn.Sequential(\n            nn.Linear(latent_dim, 256),\n            nn.LeakyReLU(0.2),\n            nn.Linear(256, 512),\n            nn.BatchNorm1d(512),\n            nn.LeakyReLU(0.2),\n            nn.Linear(512, 784),\n            nn.Tanh()\n        )\n        \n    def forward(self, z):\n        return self.generator(z)\n\n# Training loop with gradient penalty\ndef train_step(real_data, generator, discriminator, g_optimizer, d_optimizer):\n    batch_size = real_data.size(0)\n    z = torch.randn(batch_size, latent_dim)\n    \n    # Gradient penalty implementation\n    alpha = torch.rand(batch_size, 1)\n    interpolates = alpha * real_data + (1 - alpha) * generator(z)\n    interpolates.requires_grad_(True)\n    \n    # Calculate gradient penalty\n    gradients = torch.autograd.grad(\n        outputs=discriminator(interpolates),\n        inputs=interpolates,\n        grad_outputs=torch.ones_like(discriminator(interpolates)),\n        create_graph=True\n    )[0]\n    \n    gradient_penalty = ((gradients.norm(2, dim=1) - 1) ** 2).mean()\n    \n    return generator_loss, discriminator_loss, gradient_penalty"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#visualizing-the-results",
+    "href": "blog/posts/gan-stability.html#visualizing-the-results",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Visualizing the Results",
+    "text": "Visualizing the Results\nLet’s look at some training progress:\n\n\n\nGAN Training Progress"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#interactive-results-visualization",
+    "href": "blog/posts/gan-stability.html#interactive-results-visualization",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Interactive Results Visualization",
+    "text": "Interactive Results Visualization\nHere’s an interactive plot showing the training metrics:"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#video-tutorial",
+    "href": "blog/posts/gan-stability.html#video-tutorial",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\nHere’s a detailed explanation of the implementation:"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#key-insights",
+    "href": "blog/posts/gan-stability.html#key-insights",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nGradient penalty is crucial\nBatch normalization helps\nLearning rate scheduling improves convergence"
+  },
+  {
+    "objectID": "blog/posts/gan-stability.html#references",
+    "href": "blog/posts/gan-stability.html#references",
+    "title": "Stable GAN Training: A Comprehensive Guide",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Academic Experience",
+    "section": "",
+    "text": "Academic Experience\n\nManuscript Reviewer - ISCAS 25 - IEEE CASS\nSeptember 2024 - October 2024\nReviewed ML-related submissions for technical accuracy, originality, and relevance to the field. Ensured high-quality research contributions and compliance for the conference proceedings. Conducted rigorous evaluations of proposed methodologies\n\n\n\nTeaching Assistant - Digital VLSI Design (S24) - IIIT Hyderabad\nJanuary 2024 - May 2024\nGave tutorials on applied machine learning and meta-learning in VLSI. Taught the basics of Machine Learning, Deep Learning and Meta - Learning to a class of 100 students. Conducted evaluations of ML projects and assignments\n\n\n\n\nWork Experience\n\nMachine Learning Intern - xLM - Continuous Validation\nApril 2024 - December 2024\nWorked on reducing hallucinations in LLM using pre-defined user tagged context. Delivered a delayed project prototype demo within 1.5 months of joining. Implemented custom similarity search from scratch to fetch relevant context from PDFs. Deployed AWS Lambda Functions.\n\n\n\nResearch Internship - Machine Learning - IIIT Naya Raipur\nMay 2021 - May 2022\nDeveloped an algorithm to extract Regions of Interest and physical features using OpenCV. Trained and embedded Random Forest into a mobile app to predict rice quality using images from a smartphone.\n\n\n\nAgents of Style: Mobile App Development - InternWell\n2021\nContributed to UI/UX Prototyping of a Flutter-based mobile application for an international client. Effectively managed client communication and progress to fast-track development and ensure delivery as promised."
+  },
+  {
+    "objectID": "Index_old.html",
+    "href": "Index_old.html",
+    "title": "Venkata Raghavendra Nouduru",
+    "section": "",
+    "text": "&lt;img src=\"images/profile.jpg\" alt=\"Profile Photo\" class=\"profile-img\"&gt;\n&lt;div class=\"profile-content\"&gt;\n    &lt;h1&gt;Venkata Raghavendra Nouduru&lt;/h1&gt;\n    &lt;p class=\"lead\"&gt;Graduate Research Student | Machine Learning and Generative AI&lt;/p&gt;\n    &lt;p&gt;Focusing on Reality-Centric AI. Currently searching advanced ensembles to mimic our thought process.&lt;/p&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "Index_old.html#about-me",
+    "href": "Index_old.html#about-me",
+    "title": "Venkata Raghavendra Nouduru",
     "section": "About Me",
-    "text": "About Me\nI am a researcher in Machine Learning and Artificial Intelligence, particularly interested in developing novel approaches to generative models and their applications."
+    "text": "About Me\nWelcome to my webiste!"
   }
 ]
