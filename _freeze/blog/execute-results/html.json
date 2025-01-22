@@ -1,0 +1,12 @@
+{
+  "hash": "a77f243008d5c1c390c4717b7a21e411",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "<!-- ---\ntitle: \"Blog\"\npage-layout: article\n\n---\n\n\n#| echo: false\n#| output: asis\n\nimport json\nfrom datetime import datetime\n\n# Load blog data\nwith open('data/content.json') as f:\n    data = json.load(f)\n\nfor post in data['blogPosts']:\n    date = datetime.strptime(post['date'], '%Y-%m-%d').strftime('%B %d, %Y')\n    tags = ', '.join(post['tags'])\n    \n    print(f\"\"\"\n## {post['title']}\n\n*Posted on: {date}*\n\n{post['summary']}\n\n**Tags:** {tags}\n\n[Read More](/blog/posts/{post['id']}.qmd)\n\n---\n\"\"\")\n``` -->\n\n",
+    "supporting": [
+      "blog_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: _site
 
+execute:
+    freeze: auto
+
 website:
   title: "Raghavendra N. V."
   google-analytics: "G-3WBQC1YBVT"

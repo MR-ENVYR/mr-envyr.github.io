@@ -1,0 +1,12 @@
+{
+  "hash": "a85d2614b586a6ad3db5243e64ed464b",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Venkata Raghavendra Nouduru\"\nsubtitle: \"Graduate Research Student | Machine Learning and Generative AI\"\npage-layout: full\ntoc: false\n---\n\n\n<div class=\"profile-section\">\n    <img src=\"images/profile.jpg\" alt=\"Profile Photo\" class=\"profile-img\">\n    <div class=\"profile-content\">\n        <h1>Venkata Raghavendra Nouduru</h1>\n        <p class=\"lead\">Graduate Research Student | Machine Learning and Generative AI</p>\n        <p>Focusing on Reality-Centric AI. Currently searching advanced ensembles to mimic our thought process.</p>\n    </div>\n</div>\n\n\n## About Me\n\nWelcome to my webiste! \n\n\n\n",
+    "supporting": [
+      "Index_old_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

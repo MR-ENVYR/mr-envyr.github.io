@@ -1,15 +1,12 @@
-
 ---
 pagetitle: "Page Not Found"
-center: true
-format: 
-  html:
-    css: styles.css
+page-layout: article
+format: html
 ---
+
 ::: {.error-page}
-![]({{< var assets.notfound >}})
-<p>
+![](assets/images/notfound.jpeg){fig-alt="astrobot"}
+
 Hmm... Something awesome seems to be in construction here! Visit back soon to check if it is done!
-</p>
 :::
 

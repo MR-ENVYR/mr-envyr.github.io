@@ -1,0 +1,12 @@
+{
+  "hash": "1e71eca5a1b7c68453f8643336fd691a",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\npagetitle: \"Experience\"\npage-layout: article\nformat: html\ntoc: true\ntoc-depth: 1\n---\n\n\n\n\n\n\n::: {.experience-item}\n# Academic Experience\n\n\n### Manuscript Reviewer - ISCAS 25 - IEEE CASS\n\n*September 2024 - October 2024*\n\nReviewed ML-related submissions for technical accuracy, originality, and relevance to the field. Ensured high-quality research contributions and compliance for the conference proceedings. Conducted rigorous evaluations of proposed methodologies.\n\n---\n\n\n### Teaching Assistant - Digital VLSI Design (S24) - IIIT Hyderabad\n\n*January 2024 - May 2024*\n\nGave tutorials on applied machine learning and meta-learning in VLSI. Taught the basics of Machine Learning, Deep Learning and Meta - Learning to a class of 100 students. Conducted evaluations of ML projects and assignments.\n\n---\n\n\n\n:::\n\n::: {.experience-item}\n# Work Experience\n\n\n### Machine Learning Intern - xLM - Continuous Validation\n\n*April 2024 - December 2024*\n\nWorked on reducing hallucinations in LLM using pre-defined user tagged context. Delivered a delayed project prototype demo within 1.5 months of joining. Implemented custom similarity search from scratch to fetch relevant context from PDFs. Deployed AWS Lambda Functions.\n\n---\n\n\n### Research Internship - Machine Learning - IIIT Naya Raipur\n\n*May 2021 - May 2022*\n\nDeveloped an algorithm to extract Regions of Interest and physical features using OpenCV. Trained and embedded Random Forest into a mobile app to predict rice quality using images from a smartphone.\n\n---\n\n\n### Agents of Style: Mobile App Development - InternWell\n\n*2021*\n\nContributed to UI/UX Prototyping of a Flutter-based mobile application for an international client. Effectively managed client communication and progress to fast-track development and ensure delivery as promised.\n\n---\n\n\n\n:::\n\n",
+    "supporting": [
+      "experience_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

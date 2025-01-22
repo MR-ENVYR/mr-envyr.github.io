@@ -1,9 +1,3 @@
-<!-- ```{ojs}
-//| echo: false
-data = FileAttachment("data/contents.json")
-// data
-``` -->
-
 ---
 title: "Venkata Raghavendra Nouduru"
 subtitle: "Graduate Research Student | Machine Learning and Generative AI"
@@ -28,7 +22,7 @@ about:
       url: 404.qmd
     - text: CV
       icon: file-earmark-text-fill
-      url: "assets/PDFs/CV.pdf"
+      url: "https://drive.google.com/file/d/1GCdmrop9SCROCbrlayQXUXyTpOdJ4-Yc/view?usp=drive_link"
     - text: Scholar
       icon: google
       url: "https://scholar.google.com/citations?user=rJvM_h4AAAAJ&hl=en"

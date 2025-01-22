@@ -1,0 +1,12 @@
+{
+  "hash": "b5ecf0047d0861a7b3a01b686dbd6845",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\npagetitle: \"Contact\"\npage-layout: article\nformat:\n    html:\n        comments: \n            utterances:\n                repo: MR-ENVYR/mr-envyr.github.io\n                label: \"site-contact\"\n                theme: github-light\n                issue-term: url\n---\n\n\n## Get in Touch\n\n- Email: [nouduru.venkata@research.iiit.ac.in](mailto:nouduru.venkata@research.iiit.ac.in)\n- GitHub: [github.com/mr-envyr](https://github.com/mr-envyr)\n- LinkedIn: [linkedin.com/in/nvraghavendra](https://linkedin.com/in/nvraghavendra)\n\n\n\n",
+    "supporting": [
+      "contact_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
