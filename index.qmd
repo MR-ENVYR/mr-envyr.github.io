@@ -19,7 +19,7 @@ about:
       url: "mailto:nvraghavendra2000+site@gmail.com"
     - text: Blog
       icon: journal-text
-      url: 404.qmd
+      url: blog.qmd
     - text: CV
       icon: file-earmark-text-fill
       url: "https://drive.google.com/file/d/1GCdmrop9SCROCbrlayQXUXyTpOdJ4-Yc/view?usp=drive_link"
@@ -30,7 +30,7 @@ about:
 ::: {.column-page}
 
 ## About me
-Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. [Zia Abbas](https://scholar.google.com/citations?user=8oYH-fUAAAAJ) and Prof. [Amir Ahmad](https://scholar.google.com/citations?user=qD63RCUAAAAJ). My research interests primarily lie in **trustworthy deep learning** practices focussed on **personalized healthcare** and **aiding scientific discoveries**. I hope to someday discover **advanced network architectures** 🕵🏻‍♀️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!
+Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. [Zia Abbas](https://scholar.google.com/citations?user=8oYH-fUAAAAJ) and Prof. [Amir Ahmad](https://scholar.google.com/citations?user=qD63RCUAAAAJ). My research interests primarily lie in **trustworthy deep learning** practices focussed on **personalized healthcare** and **aiding scientific discoveries**. I hope to someday discover **advanced network architectures** 🕵🏻‍♂️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!
 
 ---
 

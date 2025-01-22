@@ -17,7 +17,7 @@ website:
         text: Research
       - href: experience.qmd
         text: Experience
-      - href: 404.qmd
+      - href: blog.qmd
         text: Blog
       - href: contact.qmd
         text: Contact
