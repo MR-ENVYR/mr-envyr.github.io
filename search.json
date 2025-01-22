@@ -32,14 +32,14 @@
     "href": "index.html",
     "title": "Venkata Raghavendra Nouduru",
     "section": "",
-    "text": "Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. Zia Abbas and Prof. Amir Ahmad. My research interests primarily lie in trustworthy deep learning practices focussed on personalized healthcare and aiding scientific discoveries. I hope to someday discover advanced network architectures 🕵🏻‍♀️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!\n\n\n\n\n\nI am currently exploring advanced ensembling techniques to tackle imbalanced data in healthcare and studying the effects of ensemble diversity on its performance. (In Review)\nIn my previous project, I came up with a cascaded meta-learning architecture to significantly improve statistical leakage estimation in Digital VLSI Circuits. (Publication | Presentation)\n\n\n\n\n\n\nI am in my final year of my graduate studies and am on the look out for interesting research opportunities! Please reach out to me if I seem like a good fit."
+    "text": "Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. Zia Abbas and Prof. Amir Ahmad. My research interests primarily lie in trustworthy deep learning practices focussed on personalized healthcare and aiding scientific discoveries. I hope to someday discover advanced network architectures 🕵🏻‍♂️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!\n\n\n\n\n\nI am currently exploring advanced ensembling techniques to tackle imbalanced data in healthcare and studying the effects of ensemble diversity on its performance. (In Review)\nIn my previous project, I came up with a cascaded meta-learning architecture to significantly improve statistical leakage estimation in Digital VLSI Circuits. (Publication | Presentation)\n\n\n\n\n\n\nI am in my final year of my graduate studies and am on the look out for interesting research opportunities! Please reach out to me if I seem like a good fit."
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Venkata Raghavendra Nouduru",
     "section": "",
-    "text": "Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. Zia Abbas and Prof. Amir Ahmad. My research interests primarily lie in trustworthy deep learning practices focussed on personalized healthcare and aiding scientific discoveries. I hope to someday discover advanced network architectures 🕵🏻‍♀️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!"
+    "text": "Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof. Zia Abbas and Prof. Amir Ahmad. My research interests primarily lie in trustworthy deep learning practices focussed on personalized healthcare and aiding scientific discoveries. I hope to someday discover advanced network architectures 🕵🏻‍♂️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!"
   },
   {
     "objectID": "index.html#latest-research",
@@ -68,6 +68,13 @@
     "title": "Raghavendra N. V.",
     "section": "",
     "text": "Email: nouduru.venkata@research.iiit.ac.in\nGitHub: github.com/mr-envyr\nLinkedIn: linkedin.com/in/nvraghavendra"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Raghavendra N. V.",
+    "section": "",
+    "text": "Hmm… Something awesome seems to be in construction here! Visit back soon to check if it is done!"
   },
   {
     "objectID": "experience.html",
