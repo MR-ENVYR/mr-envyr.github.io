@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Venkata Raghavendra Nouduru – Raghavendra N. V.</title>
+<title>Page Not Found – Raghavendra N. V.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-86daaaaad7353f9cc0c554efc1dd6d94.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -117,7 +118,7 @@ cookieconsent.run({
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -149,72 +150,56 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles page-columns page-full">
-  <div class="about-entity">
-    <img src="assets/images/profile.jpeg" class="about-image
-  rounded " style="width: 17em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Venkata Raghavendra Nouduru</h1>
-<p class="subtitle lead">Graduate Research Student | Machine Learning and Generative AI</p>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-    <div class="about-links">
-  <a href="https://linkedin.com/in/nvraghavendra" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/mr-envyr" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:nvraghavendra2000+site@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope-fill"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="/blog.html" class="about-link" rel="" target="">
-    <i class="bi bi-journal-text"></i>
-     <span class="about-link-text">Blog</span>
-  </a>
-  <a href="https://drive.google.com/file/d/15aXA_3no_I1QoBQhtRD1qVPAu9an8M4m/view?usp=drive_link" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-text-fill"></i>
-     <span class="about-link-text">CV</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=rJvM_h4AAAAJ&amp;hl=en" class="about-link" rel="" target="">
-    <i class="bi bi-google"></i>
-     <span class="about-link-text">Scholar</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div class="column-page">
-<section id="about-me" class="level2">
-<h2 data-anchor-id="about-me">About me</h2>
-<p>Hi! 🤖 I am a graduate student researcher at IIIT Hyderabad, supervised by Prof.&nbsp;<a href="https://scholar.google.com/citations?user=8oYH-fUAAAAJ">Zia Abbas</a> and Prof.&nbsp;<a href="https://scholar.google.com/citations?user=qD63RCUAAAAJ">Amir Ahmad</a>. My research interests primarily lie in <strong>trustworthy deep learning</strong> practices focussed on <strong>personalized healthcare</strong> and <strong>aiding scientific discoveries</strong>. I hope to someday discover <strong>advanced network architectures</strong> 🕵🏻‍♂️ that draw inspiration from natural processes and help AI reason the way we as humans do. Welcome to my personal website where I post content about my interests and my work!</p>
-<hr>
-</section>
-<section id="latest-research" class="level2">
-<h2 data-anchor-id="latest-research">Latest Research</h2>
-<ul>
-<li>I am currently exploring advanced ensembling techniques to tackle imbalanced data in healthcare and studying the effects of ensemble diversity on its performance. (In Review)</li>
-<li>In my previous project, I came up with a cascaded meta-learning architecture to significantly improve statistical leakage estimation in Digital VLSI Circuits. (<a href="https://ieeexplore.ieee.org/abstract/document/10558185">Publication</a> | <a href="https://youtu.be/Qnr6r3iCyI0">Presentation</a>)</li>
-</ul>
-<hr>
-</section>
-<section id="updates" class="level2">
-<h2 data-anchor-id="updates">Updates!</h2>
-<ul>
-<li>I am in my <strong>final year of my graduate studies</strong> and am on the look out for interesting <em>research opportunities!</em> Please reach out to me if I seem like a good fit.</li>
-</ul>
-</section>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-</main></div>
+
+
+<div class="error-page">
+<p><img src="assets/images/notfound.jpeg" class="img-fluid" alt="astrobot"></p>
+<p>Hmm… Something awesome seems to be in construction here! Visit back soon to check if it is done!</p>
 </div>
- <!-- /main -->
+<!-- ---
+title: "Blog"
+page-layout: article
+
+---
+
+
+#| echo: false
+#| output: asis
+
+import json
+from datetime import datetime
+
+# Load blog data
+with open('data/content.json') as f:
+    data = json.load(f)
+
+for post in data['blogPosts']:
+    date = datetime.strptime(post['date'], '%Y-%m-%d').strftime('%B %d, %Y')
+    tags = ', '.join(post['tags'])
+    
+    print(f"""
+## {post['title']}
+
+*Posted on: {date}*
+
+{post['summary']}
+
+**Tags:** {tags}
+
+[Read More](/blog/posts/{post['id']}.qmd)
+
+
+---
+
+""")
+``` -->
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -235,6 +220,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

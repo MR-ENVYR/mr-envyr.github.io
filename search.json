@@ -70,8 +70,29 @@
     "text": "Email: nouduru.venkata@research.iiit.ac.in\nGitHub: github.com/mr-envyr\nLinkedIn: linkedin.com/in/nvraghavendra"
   },
   {
+    "objectID": "blogs/furhatos-sama.html",
+    "href": "blogs/furhatos-sama.html",
+    "title": "Meet Furhatos-sama: An Interactive Research Assistant",
+    "section": "",
+    "text": "Hi there! Say hello to introduce Furhatos-sama — a virtual interactive research assistant designed to help researchers, students, and anyone curious about academia. Developed using the Furhat SDK, this project demonstrates a tiny subset of the endless possibilities of intelligent assistants.\nFurhatos-sama is capable of:\n\nFetching content such as videos, articles, or publishing venues using Exa AI.\nBrainstorming ideas and engaging in conversational exchanges powered by a HuggingFace model.\nSpeaking responses aloud using the Furhat Virtual SDK.\n\nFurhatos-sama can be your go-to assistant for all your research-related assistance — whether you need content recommendations or help brainstorming ideas."
+  },
+  {
+    "objectID": "blogs/furhatos-sama.html#code-overview",
+    "href": "blogs/furhatos-sama.html#code-overview",
+    "title": "Meet Furhatos-sama: An Interactive Research Assistant",
+    "section": "Code Overview",
+    "text": "Code Overview\nThe project consists of two main Python files: furhat_interact.py and utils.py.\n\nfurhat_interact.py\nThis is the primary script that handles user interaction. It connects to the Furhat robot, initiates the conversation, listens for user input, and routes the interaction based on the user’s needs.\n\nKey Stages in furhat_interact.py:\n\nInitiating Conversation:\nFurhatos-sama introduces itself and explains the available services (content search and brainstorming). It uses simple greetings, gestures (like a smile or blink), and instructions to help the user get started while making the conversation feel real.\nCapturing User Input:\nThe assistant waits for the user’s spoken input, continuously appending until the user says “done speaking.” This ensures that all necessary details are captured before processing the request.\nDetermining the Assistance Type:\nThe code checks if the user needs content recommendations or brainstorming help. For content, it further asks if the user wants videos, articles, or publishing venues.\nContent Fetching:\nOnce the content type is determined, Furhatos-sama uses the search_content function from utils.py to query Exa AI. It then reads out the titles of the results, waits for the user’s selection, and opens the chosen link(s) in a web browser.\nBrainstorming:\nIf the user opts for brainstorming, the assistant enters a conversational loop with the HuggingFace model via the brainstorm function. This enables creative discussion, allowing the user to ask follow-up questions until they decide to finish the session.\nEnding the Interaction:\nFinally, Furhatos-sama gracefully ends the session with a cheerful farewell message.\n\n\n\n\nutils.py\nThis file contains helper functions for content search and brainstorming.\n\nKey Functions in utils.py:\n\nopen_link:\nOpens a URL in the default web browser.\nsearch_content:\nDepending on the user’s chosen content type (video, article, or venue), it crafts a tailored query. It then calls the Exa AI search API to retrieve relevant results. For example:\n\nVideos: Queries YouTube for research-related video content.\nArticles: Searches for recent research articles, blogs, and papers.\nVenues: Finds conferences and journals that align with the user’s research topic.\n\nbrainstorm:\nManages the conversation with the HuggingFace-powered model. It starts with an initial system prompt instructing the model to behave as a helpful AI research assistant and then continues the conversation by appending user inputs. The model’s responses are processed to ensure they are concise and formatted well for text-to-speech."
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
+    "title": "Raghavendra N. V.",
+    "section": "",
+    "text": "Meet Furhatos-sama: An Interactive Research Assistant\n\n\n\n\n\n\n\n\n\n\n\nFeb 5, 2025\n\n\nRaghavendra\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog_old.html",
+    "href": "blog_old.html",
     "title": "Raghavendra N. V.",
     "section": "",
     "text": "Hmm… Something awesome seems to be in construction here! Visit back soon to check if it is done!"
