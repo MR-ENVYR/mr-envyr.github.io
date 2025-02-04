@@ -1,8 +1,8 @@
 {
-  "hash": "a551c807e03dbeda3f843df0bdcf8d0c",
+  "hash": "1d913b0cbcc50e287ecd7a8d8b06e51b",
   "result": {
     "engine": "jupyter",
-    "markdown": "---\npagetitle: \"Page Not Found\"\npage-layout: article\nformat: html\n---\n\n\n\n\n::: {.error-page}\n![](assets/images/notfound.jpeg){fig-alt=\"astrobot\"}\n\nHmm... Something awesome seems to be in construction here! Visit back soon to check if it is done!\n:::\n\n\n\n<!-- ---\ntitle: \"Blog\"\npage-layout: article\n\n---\n\n\n#| echo: false\n#| output: asis\n\nimport json\nfrom datetime import datetime\n\n# Load blog data\nwith open('data/content.json') as f:\n    data = json.load(f)\n\nfor post in data['blogPosts']:\n    date = datetime.strptime(post['date'], '%Y-%m-%d').strftime('%B %d, %Y')\n    tags = ', '.join(post['tags'])\n    \n    print(f\"\"\"\n## {post['title']}\n\n*Posted on: {date}*\n\n{post['summary']}\n\n**Tags:** {tags}\n\n[Read More](/blog/posts/{post['id']}.qmd)\n\n\n---\n\n\"\"\")\n``` -->\n\n",
+    "markdown": "---\npagetitle: \"Blog\"\nlisting:\n    contents:\n        - \"blogs/*.qmd\"\n    type: default\nformat: html\n---\n\n\n\n\n<!-- ::: {.error-page}\n![](assets/images/notfound.jpeg){fig-alt=\"astrobot\"}\n\nHmm... Something awesome seems to be in construction here! Visit back soon to check if it is done!\n::: -->\n\n\n\n<!-- ---\ntitle: \"Blog\"\npage-layout: article\n\n---\n\n\n#| echo: false\n#| output: asis\n\nimport json\nfrom datetime import datetime\n\n# Load blog data\nwith open('data/content.json') as f:\n    data = json.load(f)\n\nfor post in data['blogPosts']:\n    date = datetime.strptime(post['date'], '%Y-%m-%d').strftime('%B %d, %Y')\n    tags = ', '.join(post['tags'])\n    \n    print(f\"\"\"\n## {post['title']}\n\n*Posted on: {date}*\n\n{post['summary']}\n\n**Tags:** {tags}\n\n[Read More](/blog/posts/{post['id']}.qmd)\n\n\n---\n\n\"\"\")\n``` -->\n\n",
     "supporting": [
       "blog_files\\figure-html"
     ],

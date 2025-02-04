@@ -22,7 +22,7 @@ about:
       url: blog.qmd
     - text: CV
       icon: file-earmark-text-fill
-      url: "https://drive.google.com/file/d/1GCdmrop9SCROCbrlayQXUXyTpOdJ4-Yc/view?usp=drive_link"
+      url: "https://drive.google.com/file/d/15aXA_3no_I1QoBQhtRD1qVPAu9an8M4m/view?usp=drive_link"
     - text: Scholar
       icon: google
       url: "https://scholar.google.com/citations?user=rJvM_h4AAAAJ&hl=en"

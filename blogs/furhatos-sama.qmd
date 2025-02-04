@@ -1,0 +1,156 @@
+---
+title: "Meet Furhatos-sama: An Interactive Research Assistant"
+author: "Raghavendra"
+date: "2025-02-05"
+format:
+    html:
+        comments: 
+            utterances:
+                repo: MR-ENVYR/mr-envyr.github.io
+                label: "site-contact"
+                theme: github-light
+                issue-term: url
+editor: visual
+---
+
+# Introducing Furhatos-sama
+
+Hi there! Say hello to introduce **Furhatos-sama** — a virtual interactive research assistant designed to help researchers, students, and anyone curious about academia. Developed using the [Furhat SDK](https://furhat.io/), this project demonstrates a tiny subset of the endless possibilities of intelligent assistants.
+
+Furhatos-sama is capable of:
+
+* **Fetching content** such as videos, articles, or publishing venues using Exa AI.
+* **Brainstorming ideas** and engaging in conversational exchanges powered by a HuggingFace model.
+* **Speaking responses** aloud using the Furhat Virtual SDK.
+
+Furhatos-sama can be your go-to assistant for all your research-related assistance — whether you need content recommendations or help brainstorming ideas.
+
+# How It Works
+
+Furhatos-sama integrates three main components:
+
+1. **Furhat SDK:** Provides the virtual face and voice, making the interaction engaging and lifelike.
+2. **Exa AI:** Searches for relevant content on the internet (videos, articles, or venues) using a neural search approach.
+3. **HuggingFace Hub:** Powers the brainstorming capabilities with conversational AI, generating creative ideas and responses.
+
+Below is an overview of the project structure and its main functionalities.
+
+## Code Overview
+
+The project consists of two main Python files: `furhat_interact.py` and `utils.py`.
+
+### `furhat_interact.py`
+
+This is the primary script that handles user interaction. It connects to the Furhat robot, initiates the conversation, listens for user input, and routes the interaction based on the user’s needs.
+
+#### Key Stages in `furhat_interact.py`:
+- **Initiating Conversation:**  
+  Furhatos-sama introduces itself and explains the available services (content search and brainstorming). It uses simple greetings, gestures (like a smile or blink), and instructions to help the user get started while making the conversation feel real.
+  
+- **Capturing User Input:**  
+  The assistant waits for the user’s spoken input, continuously appending until the user says “done speaking.” This ensures that all necessary details are captured before processing the request.
+
+- **Determining the Assistance Type:**  
+  The code checks if the user needs content recommendations or brainstorming help. For content, it further asks if the user wants videos, articles, or publishing venues.
+
+- **Content Fetching:**  
+  Once the content type is determined, Furhatos-sama uses the `search_content` function from `utils.py` to query Exa AI. It then reads out the titles of the results, waits for the user’s selection, and opens the chosen link(s) in a web browser.
+
+- **Brainstorming:**  
+  If the user opts for brainstorming, the assistant enters a conversational loop with the HuggingFace model via the `brainstorm` function. This enables creative discussion, allowing the user to ask follow-up questions until they decide to finish the session.
+
+- **Ending the Interaction:**  
+  Finally, Furhatos-sama gracefully ends the session with a cheerful farewell message.
+
+### `utils.py`
+
+This file contains helper functions for content search and brainstorming.
+
+#### Key Functions in `utils.py`:
+- **open_link:**  
+  Opens a URL in the default web browser.
+
+- **search_content:**  
+  Depending on the user’s chosen content type (video, article, or venue), it crafts a tailored query. It then calls the Exa AI search API to retrieve relevant results. For example:
+  - **Videos:** Queries YouTube for research-related video content.
+  - **Articles:** Searches for recent research articles, blogs, and papers.
+  - **Venues:** Finds conferences and journals that align with the user's research topic.
+
+- **brainstorm:**  
+  Manages the conversation with the HuggingFace-powered model. It starts with an initial system prompt instructing the model to behave as a helpful AI research assistant and then continues the conversation by appending user inputs. The model’s responses are processed to ensure they are concise and formatted well for text-to-speech.
+
+# Setup and Usage
+
+To run Furhatos-sama on your machine, follow these steps:
+
+### Requirements:
+- **Python:** 3.11.5
+- **Exa AI library:** 1.7.2
+- **HuggingFace Hub:** 0.28.1
+- **Furhat Remote-API:** 1.0.2
+- **Furhat SDK:** 2.8.0
+
+### Installation Steps:
+1. **Install Python:**  
+   Download directly from [python.org](https://www.python.org/downloads/) or via [Anaconda](https://www.anaconda.com/).
+
+2. **Set Up a Virtual Environment:**  
+   Create and activate a virtual environment.
+
+3. **Install Dependencies:**  
+   Run:
+   ```bash
+   pip install exa-py==1.7.2 huggingface_hub==0.28.1 furhat-remote-api
+   ```
+   
+4. **Install the Furhat SDK:**  
+   Follow the instructions on the [Furhat SDK setup page](https://www.furhatrobotics.com/requestsdk).
+
+5. **API Keys:**  
+   - Obtain your [HuggingFace API token](https://huggingface.co/docs/hub/security-tokens).
+   - Get your [Exa AI API key](https://dashboard.exa.ai/api-keys).  
+   Create a file named `_keys.json` in the root folder and include your keys:
+   ```json
+   {
+       "EXA_KEY": "YOUR_EXA_KEY_HERE",
+       "HF_KEY": "YOUR_HF_KEY_HERE"
+   }
+   ```
+
+### Running the Code:
+1. **Start the Furhat Launcher:**  
+   Open the Furhat Desktop Launcher and start the remote skill.
+
+2. **Run the Python Script:**  
+   In your terminal, navigate to the project folder, activate your virtual environment, and run:
+   ```bash
+   python furhat_interact.py
+   ```
+
+3. **Interact:**  
+   Speak to Furhatos-sama and experience its dual capabilities of content fetching and brainstorming!
+
+# Demo video
+
+Check out the following video to see Furhatos-sama in action!
+
+{{< video https://www.youtube.com/embed/TrYep9gGgWQ >}}
+
+# Code
+The code for the project can be found in the following repository:
+[Repository link](https://github.com/MR-ENVYR/furhatos-sama)
+
+# Final Thoughts
+
+Furhatos-sama represents a fusion of state-of-the-art AI tools with engaging human-robot interaction. By combining the Furhat SDK for lifelike interaction, Exa AI for intelligent content search, and HuggingFace’s conversational models for creative brainstorming, this project is a small but powerful glimpse into the future of interactive research assistants. Following are a set of future enhancements which could make this project even better:
+* Using LLM to generate expressions of furhat.
+* Capturing user's video feed to make furhat attend the user and be more interactive.
+* Merging both features of search and interaction to make the interaction feel more lifelike.
+* Explore other animation possibilities to customize the visual feels as well.
+
+Feel free to explore the repository, try it out, and let me know your thoughts or suggestions for further enhancements!
+
+---
+
+Happy researching, and to infinity and beyond!
+
